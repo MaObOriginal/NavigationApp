@@ -16,15 +16,15 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mToggle;
 
-    //private Toolbar mToolbar;
+    private Toolbar mToolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(layout.activity_main);
 
-        //mToolbar = (Toolbar) findViewById(id.nav_action);
-        //setSupportActionBar(mToolbar);
+        mToolbar = (Toolbar) findViewById(id.nav_action);
+        setSupportActionBar(mToolbar);
 
         mDrawerLayout = (DrawerLayout) findViewById(id.drawerLayout);
         mToggle = new ActionBarDrawerToggle(this, mDrawerLayout, string.open, string.close);
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         mToggle.syncState();
 
         //getSupportActionBar().setHomeAsUpIndicator(mipmap.ic_menu_white_24dp);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
     }

@@ -11,14 +11,15 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent">
 
-        <!-- <include
+        <!-- auskommentieren zum test -->
+        <include
             layout="@layout/navigation_action"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:id="@+id/include" /> -->
+            android:id="@+id/include" />
 
         <TextView
             android:layout_width="wrap_content"
